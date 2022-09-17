@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Sodia Member"
-AuthUserFile home/private/.htaccess
-require valid-user
