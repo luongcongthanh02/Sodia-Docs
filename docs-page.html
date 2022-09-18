@@ -68,41 +68,10 @@
           <div
             class="docs-top-utilities d-flex justify-content-end align-items-center"
           >
-            <div class="top-search-box d-none d-lg-flex">
-              <form class="search-form">
-                <input
-                  type="text"
-                  placeholder="Search the docs..."
-                  name="search"
-                  class="form-control search-input"
-                />
-                <button type="submit" class="btn search-btn" value="Search">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </div>
-
-            <ul
-              class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex"
-            >
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-github fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-slack fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-product-hunt fa-fw"></i></a>
-              </li>
-            </ul>
-            <!--//social-list-->
             <a
               href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
               class="btn btn-primary d-none d-lg-flex"
-              >Download</a
+              >Hỗ trợ có phí</a
             >
           </div>
           <!--//docs-top-utilities-->
@@ -297,38 +266,90 @@
             <header class="docs-header">
               <h1 class="docs-heading">
                 Chuẩn bị
-                <span class="docs-time">Last updated: 2019-06-01</span>
+                <span class="docs-time">Last updated: 2022-09-20</span>
               </h1>
               <section class="docs-intro">
-                <p>
-                  Section intro goes here. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Quisque finibus condimentum nisl
-                  id vulputate. Praesent aliquet varius eros interdum suscipit.
-                  Donec eu purus sed nibh convallis bibendum quis vitae turpis.
-                  Duis vestibulum diam lorem, vitae dapibus nibh facilisis a.
-                  Fusce in malesuada odio.
-                </p>
+                <ul>
+                  <li>
+                    Chuẩn bị máy tính có hệ điều hành win 10 trở lên. (Mac thì
+                    cũng tương tự, dùng hệ điều hành mới một chút)
+                  </li>
+                  <li>
+                    Cài đặt trước trình soạn thảo:
+                    <a
+                      href="https://code.visualstudio.com/"
+                      target="_blank"
+                      class="theme-link"
+                      >VS CODE</a
+                    >
+                    (<a href="#vscode">Xem hướng dẫn cài đặt</a>)
+                  </li>
+                  <li>
+                    Cài đặt trước giả lập server
+                    <a
+                      href="https://www.apachefriends.org/download.html"
+                      class="theme-link"
+                      >Xampp</a
+                    >
+                    (<a href="#xampp">Video hướng dẫn cài đặt</a>
+                    )
+                  </li>
+                  <li>
+                    Học cách scanning and skimming:
+                    <a href="https://www.w3schools.com/" class="theme-link"
+                      >W3school</a
+                    >,
+                    <a
+                      href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                      class="theme-link"
+                      >Bootstrap</a
+                    >
+                  </li>
+                  <li>
+                    Ít nhất đọc qua một lần các tài liệu sau đây:
+                    <a
+                      href="https://www.w3schools.com/html/default.asp"
+                      class="theme-link"
+                      >HTML</a
+                    >,
+                    <a
+                      href="https://www.w3schools.com/css/default.asp"
+                      class="theme-link"
+                      >CSS</a
+                    >,
+                    <a
+                      href="https://www.w3schools.com/php/default.asp"
+                      class="theme-link"
+                      >PHP</a
+                    >
+                  </li>
+                </ul>
               </section>
               <!--//docs-intro-->
-
-              <h5>Github Code Example:</h5>
-              <p>
-                You can
-                <a
-                  class="theme-link"
-                  href="https://gist.github.com/"
-                  target="_blank"
-                  >embed your code snippets using Github gists</a
-                >
-              </p>
-              <div class="docs-code-block">
-                <!-- ** Embed github code starts ** -->
-                <script src="https://gist.github.com/xriley/fce6cf71edfd2dadc7919eb9c98f3f17.js"></script>
-                <!-- ** Embed github code ends ** -->
-              </div>
-              <!--//docs-code-block-->
-
-              <h5>Highlight.js Example:</h5>
+              <h5 id="vscode">Hướng dẫn cài đặt VS Code:</h5>
+              <!-- youtube bài 1 -->
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MlIzFUI1QGA?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <!-- // youtube bài 1 -->
+              <h5 id="xampp">Hướng dẫn cài đặt Xampp:</h5>
+              <!-- youtube bài 1 -->
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/-f8N4FEQWyY?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <!-- // youtube bài 1 -->
               <p>
                 You can
                 <a
@@ -358,6 +379,7 @@
                   href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css&#x22;&#x3E;</code
                 >
               </p>
+
               <div class="docs-code-block">
                 <pre class="shadow-lg rounded"><code class="json hljs">[
   {
