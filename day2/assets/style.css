@@ -131,7 +131,7 @@ nav {
   top: 50%;
   width: 600px;
   height: 600px;
-  background-image: url(/assets/img/unnamed.jpg);
+  background-image: url(../day2/assets/img/unnamed.jpg);
   background-size: cover;
 }
 /* footer */
