@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- File reset luôn đặt ở đầu -->
-    <link rel="stylesheet" href="../day2/assets/reset.css" />
-    <link rel="stylesheet" href="../day2/assets/style.css" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
     <!-- Kéo thư viện Fonts để sử dụng: Google Fonts (https://fonts.google.com/) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +30,7 @@
     <header class="header">
       <nav class="nav container-full box-shadown">
         <a href="#" class="logo">
-          <img src="../day2/assets/img/google.png" alt="logo" class="logo-image" />
+          <img src="./assets/img/google.png" alt="logo" class="logo-image" />
         </a>
         <ul class="menu">
           <li class="menu-item">
@@ -67,44 +68,104 @@
     </header>
     <!-- Phần chính -->
     <main class="main">
-      <section class="section-white container">
-        <div class="box-content">
-          <div class="box-item">
-            <div class="icon">
-              <img src="../day2/assets/img/icon-Book.png" alt="" class="icon" />
+      <section class="section-white">
+        <div class="container">
+          <!-- Box feature -->
+          <div class="box-content">
+            <div class="box-item">
+              <div class="">
+                <img src="./assets/img/principle-2.png" alt="" />
+              </div>
+              <div class="gap30"></div>
+              <div class="title2">Bảo mật</div>
+              <p class="">
+                Chúng tôi hướng đến trải nghiệm nhanh chống của khách hàng
+              </p>
             </div>
-            <div class="gap30"></div>
-            <div class="title2">Nhanh chống</div>
-            <p class="">
-              Chúng tôi hướng đến trải nghiệm nhanh chống của khách hàng
-            </p>
-          </div>
-          <div class="box-item">
-            <div class="">
-              <img src="../day2/assets/img/principle-2.png" alt="" />
+            <div class="box-item">
+              <div class="">
+                <img src="./assets/img/principle-2.png" alt="" />
+              </div>
+              <div class="gap30"></div>
+              <div class="title2">Bảo mật</div>
+              <p class="">
+                Chúng tôi hướng đến trải nghiệm nhanh chống của khách hàng
+              </p>
             </div>
-            <div class="gap30"></div>
-            <div class="title2">Bảo mật</div>
-            <p class="">
-              Chúng tôi hướng đến trải nghiệm nhanh chống của khách hàng
-            </p>
-          </div>
-          <div class="box-item">
-            <div class="">
-              <img src="../day2/assets/img/principle-3.png" alt="" />
+            <div class="box-item">
+              <div class="">
+                <img src="./assets/img/principle-3.png" alt="" />
+              </div>
+              <div class="gap30"></div>
+              <div class="title2">An tâm</div>
+              <p class="">
+                Chúng tôi hướng đến trải nghiệm nhanh chống của khách hàng
+              </p>
+              <div class=""></div>
             </div>
-            <div class="gap30"></div>
-            <div class="title2">An tâm</div>
-            <p class="">
-              Chúng tôi hướng đến trải nghiệm nhanh chống của khách hàng
-            </p>
           </div>
+          <!-- Giới thiệu chương trình CTA -->
+          <article>
+            <div class="chungnhan">
+              <p><span>cấp chứng chỉ miễn phí</span></p>
+              <h2 class="title">Chương trình tài trợ </br>bởi Google</h2>
+              <img src="./assets/img/800px-Google_Ads_logo.svg.png" alt="">
+            </div>
+          </article>
         </div>
       </section>
-      <section class="section-dark"></section>
-      <section class="section-white"></section>
+      <section class="section-shadown">
+        <div class="container">
+        <div class="wrapper">
+        <article>
+          <p><span>Gốc nhìn 360+</span></p>
+          <h1 class="title">Kiến thức hữu ích</h1>
+        </article>
+        <div class="box-content">
+        <a href="#">
+        <div class="item">
+          <div class="item-image">
+            <img src="./assets/img/blog1.png" alt="" class="item-img">
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">Lập trình ngày 1 không khó</h3>
+            <p class="item-text">Đã có hướng dẫn cụ thể</p>
+          </div>
+        </div>
+      </a>
+        <div class="item">
+          <div class="item-image">
+            <img src="./assets/img/blog2.png" alt="" class="item-img">
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">Lập trình ngày 1 không khó</h3>
+            <p class="item-text">Đã có hướng dẫn cụ thể</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="./assets/img/blog3.png" alt="" class="item-img">
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">Lập trình ngày 1 không khó</h3>
+            <p class="item-text">Đã có hướng dẫn cụ thể</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+      </section>
     </main>
     <!-- Phần cuối của trang -->
-    <footer class="footer"></footer>
+    <footer>
+      <div class="container-full footer">
+      <div class="copy">
+        <a href="https://luongcongthanh.com"><p>@luongcongthanh.com</p></a> 
+      </div>
+      <div class="chinhsach">
+        Trang web mang tính chất minh họa, phụ vụ việc học. Không có tính thương mại.
+      </div>
+    </div>
+    </footer>
   </body>
 </html>

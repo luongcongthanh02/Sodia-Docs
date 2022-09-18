@@ -2,6 +2,7 @@
 /* Style base */
 :root {
   --primary: #1a73e8;
+  --secondary: #e8f0fe;
   --white: #fff;
   --text_base: #202020;
   --text_heading: #000;
@@ -14,11 +15,16 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
+  max-width: 1900px;
+  margin: 0 auto;
 }
 /* Style UI */
 /* gap */
 .gap30 {
   height: 30px;
+}
+.gap90 {
+  height: 90px;
 }
 /* text */
 .title {
@@ -79,6 +85,17 @@ p {
   text-decoration: none;
   line-height: 1.2em;
 }
+p span {
+  display: block;
+  width: fit-content;
+  background-color: var(--secondary);
+  padding: 5px 15px 5px 15px;
+  border-radius: 999px;
+  margin-bottom: 30px;
+}
+p span:hover {
+  box-shadow: inset 1px 1px 2px var(--primary);
+}
 a:hover {
   color: var(--primary);
 }
@@ -93,15 +110,25 @@ section {
 .section-white {
   background-color: var(--layout_white);
 }
+.section-shadown {
+  height: 90vh;
+  box-shadow: 0 0 40px 0 rgb(0 1 1 / 10%);
+}
 /* Content Layout */
 .container-full {
   width: 100%;
+  position: relative;
 }
 .container {
+  position: relative;
   width: 70%;
   margin: 0 auto;
 }
 /* header */
+.header {
+  position: relative;
+  margin-bottom: 90px;
+}
 /* navigation */
 nav {
   display: flex;
@@ -120,7 +147,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 90px;
 }
 .hero-article {
   width: 30%;
@@ -131,17 +157,42 @@ nav {
   top: 50%;
   width: 600px;
   height: 600px;
-  background-image: url(https://laptrinh7ngay.luongcongthanh.com/day2/assets/img/unnamed.jpg);
+  background-image: url(../assets/img/unnamed.jpg);
   background-size: cover;
 }
 /* footer */
 footer {
-  height: 50vh;
-  background-color: var(--layout_darkest);
-  box-shadow: 10px 10px 40px 20px rgb(0 1 1 / 10%);
+  position: relative;
+  background-color: var(--layout_dark);
+  z-index: 100;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  color: var(--text_base);
+}
+.copy {
+  margin-left: 15px;
+  display: block;
+  width: fit-content;
+  background-color: var(--secondary);
+  padding: 5px 15px 5px 15px;
+  border-radius: 999px;
+}
+.copy:hover {
+  box-shadow: inset 1px 1px 2px var(--primary);
+}
+.chinhsach {
+  margin-right: 15px;
 }
 .box-shadown {
   box-shadow: 0 1px 2px 1px rgb(0 1 1 / 10%);
+}
+.wrapper {
+  position: relative;
+  transform: translateY(30%);
 }
 /* Menu */
 .logo {
@@ -170,13 +221,35 @@ footer {
   align-items: center;
 }
 .box-item {
-  background-color: #e8f0fe;
+  background-color: var(--secondary);
   border-radius: 10px;
   padding: 30px;
   width: 30%;
   height: 200px;
   margin-right: 15px;
 }
+.item-image img {
+  border-radius: 20px;
+}
+.item-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
 .icon {
   max-width: 50%;
+}
+article {
+  position: relative;
+}
+.chungnhan {
+  margin-top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.chungnhan img {
+  float: right;
+  width: 300px;
+  height: auto;
 }
