@@ -1,0 +1,182 @@
+/* Phần khai báo biến cú pháp :root {} để tái sử dụng các biến một cách dễ dàng */
+/* Style base */
+:root {
+  --primary: #1a73e8;
+  --white: #fff;
+  --text_base: #202020;
+  --text_heading: #000;
+  --layout_white: #fff;
+  --layout_dark: rgba(212, 211, 211, 0.1);
+  --layout_darker: #f8f9fa;
+}
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+/* Style UI */
+/* gap */
+.gap30 {
+  height: 30px;
+}
+/* text */
+.title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.title2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+/* button */
+button {
+  cursor: pointer;
+}
+.btn {
+  padding: 11px;
+  background-color: var(--primary);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.btn:hover {
+  padding: 10px;
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 5px;
+}
+.btn-transparent {
+  padding: 10px;
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 5px;
+}
+.btn-transparent:hover {
+  padding: 11px;
+  background-color: var(--primary);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+/* Style text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text_heading);
+  text-decoration: none;
+}
+a,
+p {
+  color: var(--text_base);
+  text-decoration: none;
+  line-height: 1.2em;
+}
+a:hover {
+  color: var(--primary);
+}
+/* Style Layout */
+section {
+  max-width: 1900px;
+  height: 100vh;
+}
+.section-dark {
+  background-color: var(--layout_dark);
+}
+.section-white {
+  background-color: var(--layout_white);
+}
+/* Content Layout */
+.container-full {
+  width: 100%;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+/* header */
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  background-color: var(--layout_white);
+  color: var(--text_base);
+  position: relative;
+  z-index: 9999;
+}
+/* Hero */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+.hero-article {
+  width: 30%;
+}
+.banner {
+  position: relative;
+  right: 0;
+  top: 50%;
+  width: 600px;
+  height: 600px;
+  background-image: url(/assets/img/unnamed.jpg);
+  background-size: cover;
+}
+/* footer */
+footer {
+  height: 50vh;
+  background-color: var(--layout_darkest);
+  box-shadow: 10px 10px 40px 20px rgb(0 1 1 / 10%);
+}
+.box-shadown {
+  box-shadow: 0 1px 2px 1px rgb(0 1 1 / 10%);
+}
+/* Menu */
+.logo {
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  position: absolute;
+  right: 85px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.menu-item {
+  margin-right: 15px;
+}
+.nav-cta {
+  margin-right: 15px;
+}
+/* phần chính */
+.box-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-item {
+  background-color: #e8f0fe;
+  border-radius: 10px;
+  padding: 30px;
+  width: 30%;
+  height: 200px;
+  margin-right: 15px;
+}
+.icon {
+  max-width: 50%;
+}
